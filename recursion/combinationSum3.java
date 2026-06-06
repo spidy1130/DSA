@@ -1,3 +1,6 @@
+import java.util.List;
+import java.util.ArrayList;
+
 class Solution {
     public void Find(int k,int target,int i,List<List<Integer>>ans,List<Integer>temp,int sum)
     {
@@ -18,5 +21,12 @@ class Solution {
         List<Integer>temp=new ArrayList<>();
         Find(k,n,1,ans,temp,0);
         return ans;
+    }
+}
+
+public class combinationSum3 {
+    public static void main(String[] args) {
+        Solution s = new Solution();
+        System.out.println(s.combinationSum3(3,7));
     }
 }
